@@ -1,4 +1,4 @@
-<div dir="rtl" style="text-align: right; direction: rtl;">
+<div dir="rtl">
 
 # نقشه راه یادگیری برنامه نویسی
 
