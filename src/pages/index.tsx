@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { FC } from "react";
+import Header from '@components/header';
 
 const HomePage: FC = () => {
   return (
@@ -10,7 +11,7 @@ const HomePage: FC = () => {
       </Head>
 
       <main id="content" className="site-content">
-        a
+        <Header />
       </main>
     </>
   );
