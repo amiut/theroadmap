@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "Component": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["simple-import-sort", "prettier"],
+  "rules": {
+    "no-shadow": "off",
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        },
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "prettier/prettier": ["error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "import/no-unresolved": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-inferrable-types": [
+      "warn", {
+        "ignoreParameters": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}
