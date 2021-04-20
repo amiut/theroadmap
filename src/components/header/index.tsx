@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="container mx-auto flex items-center py-4">
+    <header className="container mx-auto flex items-center py-4 mb-10">
       <div className="font-black text-2xl">
         نقشه راه برنامه نویسی
       </div>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { FC } from "react";
 import Header from '@components/header';
+import Hero from '@components/hero';
 
 const HomePage: FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: FC = () => {
 
       <main id="content" className="site-content">
         <Header />
+        <Hero />
       </main>
     </>
   );
